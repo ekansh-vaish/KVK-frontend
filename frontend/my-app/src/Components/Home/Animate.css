@@ -1,0 +1,133 @@
+/* Slider Container */
+.slider {
+  position: relative;
+  /* top: -65px; */
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  pointer-events: none;
+  animation: slideAnim 16s infinite;
+}
+
+/* Slide Backgrounds */
+.slide:nth-child(1) {
+  background-image: url('https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/03/22/Pictures/chandigarh-outskirts-hindustan-ludhiana-bothgarh-working-chandigarh_08e52426-4ccc-11e9-9111-3135b956f139.jpg');
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  background-image: url('https://i.pinimg.com/736x/e1/c1/f2/e1c1f2c4aafd6901a38c9544ab2781be.jpg');
+  animation-delay: 4s;
+}
+.slide:nth-child(3) {
+  background-image: url('https://media.istockphoto.com/id/503646746/photo/farmer-spreading-fertilizer-in-the-field-wheat.jpg?s=612x612&w=0&k=20&c=Lgxsjbz0jaYyQrvfzhyAsW2zELtshRP4AtLzkpmcLiE=');
+  animation-delay: 8s;
+}
+.slide:nth-child(4) {
+  background-image: url('https://i.pinimg.com/736x/f2/e2/26/f2e2263e5c3ae5e2620b8f85ac4fe557.jpg');
+  animation-delay: 12s;
+}
+
+/* Slide Animation */
+@keyframes slideAnim {
+  0% { opacity: 0; pointer-events: none; }
+  5% { opacity: 1; pointer-events: auto; }
+  25% { opacity: 1; pointer-events: auto; }
+  30% { opacity: 0; pointer-events: none; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+/* Slide Content */
+.slide-content {
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-50px) translateY(-100px);
+  animation: textFade 16s infinite;
+}
+
+/* Text Animation */
+@keyframes textFade {
+  0% { opacity: 0; transform: translateX(-30px); }
+  5% { opacity: 1; transform: translateX(0); }
+  25% { opacity: 1; transform: translateY(0); }
+  30% { opacity: 0; transform: translateY(-100px); }
+  100% { opacity: 0; transform: translateX(-30px); }
+}
+
+/* Individual Slide Content Delay */
+.slide:nth-child(1) .slide-content { animation-delay: 0s; }
+.slide:nth-child(2) .slide-content { animation-delay: 4s; }
+.slide:nth-child(3) .slide-content { animation-delay: 8s; }
+.slide:nth-child(4) .slide-content { animation-delay: 12s; }
+
+/* Headings */
+.slide-content h2 {
+  font-size: 50px;
+  color: #7227eb;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.slide-content p {
+  font-size: 22px;
+  font-weight: bolder;
+  color: rgb(231, 23, 79);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.slide-content button {
+  padding: 12px 25px;
+  background-color: #17ADBE;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-content button:hover {
+  background-color: purple;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide-content {
+    bottom: 100px;
+    left: 20px;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .slide-content h2 {
+    font-size: 24px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+  }
+
+  .slide-content button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
