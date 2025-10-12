@@ -23,12 +23,13 @@ console.log(response.data);
 localStorage.setItem("role",response.data.payload.role );
 
 alert("Login successful!");
-navigate("/")
+navigate("/product")
 setUserLogin({ email: '', password: '' });
 } catch (error) {
 if(error)
 {
-alert("Incorrect Email or Password");    
+alert("Incorrect Email or Password");
+navigate("/register")    
 }
 console.error(error);
 }

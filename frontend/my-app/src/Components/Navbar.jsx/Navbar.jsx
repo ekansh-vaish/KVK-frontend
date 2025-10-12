@@ -29,7 +29,7 @@ console.error("Logout failed:", error);
 return (
 <Navbar expand="lg" bg="light" className="shadow-sm">
 <Container fluid>
-<Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+<Navbar.Brand as={Link} to="/product" className="d-flex align-items-center">
 <img src={logo} alt="logo" height="50" className="me-2" />
 <span className="fw-bold">Krishi Vikas Kendra</span>
 </Navbar.Brand>
@@ -37,7 +37,7 @@ return (
 <Navbar.Toggle aria-controls="navbarScroll" />
 <Navbar.Collapse id="navbarScroll">
 <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-<Nav.Link as={Link} to="/"><b>Explore</b></Nav.Link>
+<Nav.Link as={Link} to="/product"><b>Explore</b></Nav.Link>
 <Nav.Link as={Link} to="/network"><b>Network</b></Nav.Link>
 <Nav.Link as={Link} to="/aboutus"><b>About Us</b></Nav.Link>
 <Nav.Link as={Link} to="/contactus"><b>Contact Us</b></Nav.Link>

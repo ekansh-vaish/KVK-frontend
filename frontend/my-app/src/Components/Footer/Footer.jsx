@@ -16,8 +16,8 @@ function Footer() {
 <div className="col-md-4 mb-3">
 <h5>Quick Links</h5>
 <ul className="list-unstyled">
-<li><a href="/" className="footer-link">Home</a></li>
-<li><a href="/" className="footer-link">Products</a></li>
+<li><a href="/product" className="footer-link">Home</a></li>
+<li><a href="/product" className="footer-link">Products</a></li>
 <li><a href="/contactus" className="footer-link">Contact Us</a></li>
 <li><a href="/aboutus" className="footer-link">About Us</a></li>
 <li><a href="/network" className="footer-link">Network</a></li>

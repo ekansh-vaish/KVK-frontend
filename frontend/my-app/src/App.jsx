@@ -11,6 +11,7 @@ import About from "./Components/Pages/About/About";
 import Contact from "./Components/Pages/Contact/Contact";
 import Animate from "./Components/Home/Animate";
 import Main from "./Components/Home/Main";
+import NotFound from "./Components/Pages/Notfound";
 
 function App() {
 return (
@@ -18,7 +19,7 @@ return (
 <BrowserRouter>
 <Navbar1/>
 <Routes>
-<Route path="/" element={<Main/>} />
+<Route path="/product" element={<Main/>} />
 <Route path="/signup" element={<Signup />} />
 <Route path="/login" element={<Login/>} />
 <Route path="/Dashboard" element={<Dashboard/>} />
@@ -27,6 +28,7 @@ return (
 <Route path="/aboutus" element={<About/>} />
 <Route path="/contactus" element={<Contact/>} />
 <Route path="/agri" element={<Home/>} />
+<Route path="*" element={<NotFound/>} />
 
 </Routes>
 <Footer/>
