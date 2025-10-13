@@ -1,10 +1,12 @@
 /* Slider Container */
+
 .slider {
   position: relative;
   /* top: -65px; */
   width: 100%;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
+  background-color: rgb(187, 217, 225);
 }
 
 /* Individual Slide */
@@ -14,8 +16,8 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position :right;
+  background-size: contain;
   opacity: 0;
   pointer-events: none;
   animation: slideAnim 16s infinite;
@@ -27,15 +29,15 @@
   animation-delay: 0s;
 }
 .slide:nth-child(2) {
-  background-image: url('https://i.pinimg.com/736x/e1/c1/f2/e1c1f2c4aafd6901a38c9544ab2781be.jpg');
+  background-image: url("https://t3.ftcdn.net/jpg/03/40/70/04/360_F_340700428_AquH6hbzeMOYLQ6g6kfWAMuUvfw60Zd1.jpg");
   animation-delay: 4s;
 }
 .slide:nth-child(3) {
-  background-image: url('https://media.istockphoto.com/id/503646746/photo/farmer-spreading-fertilizer-in-the-field-wheat.jpg?s=612x612&w=0&k=20&c=Lgxsjbz0jaYyQrvfzhyAsW2zELtshRP4AtLzkpmcLiE=');
+  background-image: url('https://thumbs.dreamstime.com/b/farmer-327521537.jpg');
   animation-delay: 8s;
 }
 .slide:nth-child(4) {
-  background-image: url('https://i.pinimg.com/736x/f2/e2/26/f2e2263e5c3ae5e2620b8f85ac4fe557.jpg');
+  background-image: url('https://t4.ftcdn.net/jpg/00/99/85/77/360_F_99857753_ib3X5SVgQ3ZXPhaYHKqHsfXXFT12qPuO.jpg');
   animation-delay: 12s;
 }
 
@@ -52,7 +54,7 @@
 .slide-content {
   position: absolute;
   bottom: 50px;
-  left: 60px;
+  left: 80px;
   z-index: 2;
   color: rgb(0, 0, 0);
   max-width: 600px;
@@ -81,7 +83,7 @@
 /* Headings */
 .slide-content h2 {
   font-size: 50px;
-  color: #7227eb;
+  color: #232324;
   margin-bottom: 15px;
 }
 
@@ -89,7 +91,7 @@
 .slide-content p {
   font-size: 22px;
   font-weight: bolder;
-  color: rgb(231, 23, 79);
+  color: rgb(226, 150, 68);
   margin-bottom: 20px;
 }
 

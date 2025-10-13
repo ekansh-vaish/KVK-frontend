@@ -24,7 +24,7 @@ setUpdateProduct({...updateproduct,[name] : value})
 
 async function GetProduct() {
 try {
-const res =  await axios.get("http://localhost:8080/product/getproduct",{withCredentials : true},) 
+const res =  await axios.get("https://kvk-frontend.onrender.com/product/getproduct",{withCredentials : true},) 
 console.log(res.data.data);
 setUpdateProduct({
 name: res.data.data.name || '',
@@ -55,9 +55,9 @@ formData.append("file", image);
 // const token = localStorage.getItem("token");
 
 try {
-await axios.put(`http://localhost:8080/product/update/${productId}`,formData,
+await axios.put(`https://kvk-frontend.onrender.com/product/update/${productId}`,formData,
 {
-headers: {   // ✅ yaha token bhej rahe ho
+headers: {   
 "Content-Type": "multipart/form-data"
 },
 withCredentials : true

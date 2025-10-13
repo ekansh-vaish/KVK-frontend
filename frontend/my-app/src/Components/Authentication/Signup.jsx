@@ -25,7 +25,7 @@ setuserRegister({...userRegister,[name] : value})
 async function UserSignup(e) {
 e.preventDefault();
 try{
- await axios.post("http://localhost:8080/auth/signup",userRegister)
+ await axios.post("https://kvk-frontend.onrender.com/auth/signup",userRegister)
 navigate("/login")
 setuserRegister({
 username :"",
