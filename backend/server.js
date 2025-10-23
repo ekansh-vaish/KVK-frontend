@@ -23,7 +23,7 @@ console.log("Connected");
 console.log(err);    
 })
 
-const cors = require('cors');
+
 
 app.use(cors({
   origin: 'https://krishi-vikas-kendra-t2is-r0owxjvkz-ekansh-vaishs-projects.vercel.app',
