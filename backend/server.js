@@ -27,7 +27,7 @@ console.log(err);
 
 app.use(cors({
   origin: 'https://krishi-vikas-kendra-t2is-r0owxjvkz-ekansh-vaishs-projects.vercel.app',
-  methods: ['GET', 'POST'],
+  methods: ['GET', 'POST','PUT', 'DELETE'],
   credentials: true
 }));
 
