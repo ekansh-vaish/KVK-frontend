@@ -23,13 +23,14 @@ console.log("Connected");
 console.log(err);    
 })
 
-app.use(cors(
-{
-origin: 'https://vercel.com/ekansh-vaishs-projects/krishi-vikas-kendra-t2is/9Z2MB6kiqWENGarRrf8kknTFhLJf', // allow your frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // ✅ must match your frontend origin
-credentials: true       
-}
-));
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://krishi-vikas-kendra-t2is-r0owxjvkz-ekansh-vaishs-projects.vercel.app',
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
 
 
 app.use(express.json()); 
